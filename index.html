@@ -1,0 +1,49 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+<title></title>
+<meta name="" content="">
+<script src="js/jquery-1.10.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+<link href="css/style2.css" rel="stylesheet" media="screen">
+<style type="text/css">
+body{
+	background-color: #E4E4E4;
+}
+</style>
+</head>
+<body>
+<div class="span6" style="width:352px; margin-left: 460px; margin-top: 200px;">
+          <div class="block_content">
+                <div class="content-top">
+                  <div class="content-top-article" style="width: 330px;">
+                    Вход в приложение (Библиотека v.1.1)
+                  </div>
+                </div>
+                <div class="content-middle" style="width:350px;">
+                  <div class="content-table" >
+                    <div style="">
+                    	<form>
+							Введите логин: <input id="login" style="margin-left:20px;" type="text"/><br/><br/>
+							Введите пароль: <input id="password" style="margin-left:9px; height: 30px;" type="password"/><br/><br/>
+							<input style="margin-left:250px; width: 80px;" type="button" onclick="autorizition();" value="Вход"/>
+						</form>
+                    </div>
+				</div>
+			</div>
+			<div class="content-bottom"></div>
+		</div>
+		
+<script type="text/javascript">
+function autorizition(){
+	var lInput = document.getElementById('login').value;
+    var pInput = document.getElementById('password').value;
+	var login_password = "1";
+	if (lInput == login_password && pInput == login_password){
+		document.location.replace("books.php");
+	}else alert("Неверный логин или пароль!");
+}
+</script>
+</body>
+</html>
